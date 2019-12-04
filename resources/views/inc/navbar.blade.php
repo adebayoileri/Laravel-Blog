@@ -1,20 +1,23 @@
-<nav class="navbar navbar-inverse">
-    <div class="container">
-        <div class="navbar-header">
-        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"></button>
-            <span class="sr-only">Toggle Navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a href="/" class="navbar-brand">{{config('app.name', 'Laravelproject')}}</a>
-    </div>
-    <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-        </ul>
-    </div>
-    </div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3 fixed-top">
+  <a class="navbar-brand" href="/">{{config('app.name', 'Laravelproject')}}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/services" >Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/posts" >Blog</a>
+      </li>
+    </ul>
+  </div>
 </nav>
