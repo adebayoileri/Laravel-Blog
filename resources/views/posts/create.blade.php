@@ -12,6 +12,7 @@
             {{Form::label('body',  'Body')}}
             {{Form::textarea('body','', ['class' =>'form-control', 'placeholder' => "Post Body"])}}
         </div>
+        {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}
     </div>
 @endsection
