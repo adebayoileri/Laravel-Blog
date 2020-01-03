@@ -23,3 +23,6 @@ Route::resource('posts', 'PostsController');
 Route::get('/signup', 'AuthController@register');
 
 Route::get('/login', 'AuthController@login');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
