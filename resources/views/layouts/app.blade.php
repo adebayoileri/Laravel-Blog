@@ -28,7 +28,7 @@
                 @yield('content')
             {{-- </main> --}}
         </div>
-        @include('inc.footer')
+        {{-- @include('inc.footer') --}}
     </div>
 </body>
 </html>
